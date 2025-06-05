@@ -9,6 +9,9 @@ class HomeNavigationBarSmallDevices extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        border: Border(bottom: BorderSide(color: charcoal)),
+      ),
       child: IntrinsicHeight(
         child: Row(
           children: [
