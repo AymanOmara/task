@@ -19,4 +19,11 @@ class LightAppTheme implements IAppTheme {
   @override
   TextStyle get agP2Medium =>
       TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500);
+
+  @override
+  TextStyle get agH5Regular => TextStyle(color: white, fontSize: 24);
+
+  @override
+  TextStyle get agButtonLinkMedium =>
+      TextStyle(color: black, fontSize: 14, fontWeight: FontWeight.w500);
 }
