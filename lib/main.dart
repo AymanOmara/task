@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:task/core/di/injector.dart';
 import 'package:task/core/ui/theme/colors.dart';
+import 'package:task/core/ui/theme/theme_utils.dart';
 
 import 'core/routing/app_router.dart';
 import 'core/routing/app_routes.dart';
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
             },
             child: GetMaterialApp(
               themeMode: ThemeMode.light,
-              theme: getIt<AppCubit>().theme.themeData,
+              theme: theme.themeData,
               supportedLocales: const <Locale>[Locale('en')],
               translations: TranslationService(),
               title: 'Task',
