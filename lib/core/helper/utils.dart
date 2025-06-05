@@ -19,7 +19,6 @@ class Formatter {
 
 class Validator {
   Validator._();
-
 }
 
 extension ArrayUtils<T> on List<T> {
@@ -49,3 +48,23 @@ extension TruncateDoubleExtension on double {
     return '${parts[0]}.$decimalPart';
   }
 }
+
+String buildNightsAndDateRange(String start, String end) {
+  try {
+    final format = DateFormat('dd-MM-yyyy');
+    final startDate = format.parseStrict(start);
+    final endDate = format.parseStrict(end);
+
+    final nights = endDate.difference(startDate).inDays;
+
+    final startMonthDay = DateFormat('MMM d').format(startDate);
+    final endMonthDay = DateFormat('MMM d').format(endDate);
+    final year = DateFormat('yyyy').format(endDate);
+
+    return '$nights ${"nights".tr} ($startMonthDay - $endMonthDay, $year)';
+  } catch (e) {
+    print('Date parsing error: $e');
+    return '';
+  }
+}
+

@@ -7,5 +7,7 @@ Map<String, String> en = {
   "info": "Info",
   "tasks": "Tasks",
   "analytics": "Analytics",
-  "add_new_item":"Add a New Item"
+  "add_new_item":"Add a New Item",
+  "nights":"Nights",
+  "unfinished_tasks":"unfinished tasks"
 };
