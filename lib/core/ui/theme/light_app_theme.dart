@@ -11,5 +11,12 @@ class LightAppTheme implements IAppTheme {
     primaryColor: black,
     scaffoldBackgroundColor: black,
   );
-}
 
+  @override
+  TextStyle get agP2Regular =>
+      TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w400);
+
+  @override
+  TextStyle get agP2Medium =>
+      TextStyle(color: white, fontSize: 14, fontWeight: FontWeight.w500);
+}

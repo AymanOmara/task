@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:task/core/di/injector.dart';
+import 'package:task/core/ui/theme/colors.dart';
 
 import 'core/routing/app_router.dart';
 import 'core/routing/app_routes.dart';
@@ -22,9 +23,8 @@ void main() async {
 
   SystemChrome.setSystemUIOverlayStyle(
     SystemUiOverlayStyle(
-      statusBarColor: Colors.transparent,
-      statusBarIconBrightness:
-          Get.isPlatformDarkMode ? Brightness.dark : Brightness.light,
+      statusBarColor: Get.isPlatformDarkMode ? white : black,
+      statusBarIconBrightness: Brightness.light,
     ),
   );
   runApp(MyApp());

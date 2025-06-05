@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task/features/home/presentation/page/home_screen.dart';
+import 'package:task/features/home/features/main/presentation/page/home_screen.dart';
 
 import 'app_routes.dart';
 
